@@ -9,6 +9,7 @@ df = pd.read_csv('Diwali Sales Data.csv', encoding='unicode_escape')
 
 print(df.shape)
 print(df.head(50))
+print(df.tail(10))
 
 
 
