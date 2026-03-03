@@ -3,3 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+df = pd.read_csv('Diwali Sales Data.csv', encoding='unicode_escape')
+# to avoide encoding error , use 'unicode_escape'
+
+print(df.shape)
+print(df.head(50))
+
+
+
