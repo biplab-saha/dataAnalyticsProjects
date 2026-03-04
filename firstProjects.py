@@ -15,6 +15,13 @@ df = pd.read_csv('Diwali Sales Data.csv', encoding='unicode_escape')
 removeUnusedCloumn = df.drop(['Status','unnamed1'],axis=1, inplace= True)
 print(removeUnusedCloumn)
 
-print(df.info())
+# print(df.info())
 
 
+# null value remove 
+nullValueRemove = df.dropna (inplace=True)
+print(nullValueRemove)
+
+# null value check
+nullValueCheck = pd.isnull(df).sum()
+print(nullValueCheck)
